@@ -9,9 +9,9 @@ const Addtodo = () => {
     
     const[todo,setTodo]=useState()
     const inputHandler=(e)=>{
-        const{name,value}=e.target;
+        
         setTodo({
-           ...todo,[name]:value
+           ...todo,[e.target.name]:e.target.value
         })
         console.log(todo)
     }
@@ -43,19 +43,19 @@ const Addtodo = () => {
                         
                         <div className="col col-12 col-sm-6 col-md-6 col-lg-6">
                         <label htmlFor=''className='form-label'>Title</label>  
-                        <input type='text' className='form-control' name='title' value={todo.title} onChange={inputHandler}/>
+                        <input type='text' className='form-control' name='title'  onChange={inputHandler}/>
                         </div>
                         <div className="col col-12 col-sm-6 col-md-6 col-lg-6">
                         <label htmlFor=''className='form-label'>id</label>  
-                        <input type='text' className='form-control' name='id' value={todo.id} onChange={inputHandler}/>
+                        <input type='text' className='form-control' name='id'  onChange={inputHandler}/>
                         </div>
                         <div className="col col-12 col-sm-6 col-md-6 col-lg-6">
                         <label htmlFor=''className='form-label'>UserId</label>  
-                        <input type='text' className='form-control' name='userid' value={todo.userid} onChange={inputHandler}/>
+                        <input type='text' className='form-control' name='userid'  onChange={inputHandler}/>
                         </div>
                         <div className="col col-12 col-sm-6 col-md-6 col-lg-6">
                         <label htmlFor=''className='form-label'>StatusCompleted</label>  
-                        <input type='text' className='form-control' name='completed' value={todo.completed} onChange={inputHandler}/>
+                        <input type='text' className='form-control' name='completed'  onChange={inputHandler}/>
                         </div>
                        
                         <div className=" col-12 col-sm-6 col-md-6 col-ig-6">

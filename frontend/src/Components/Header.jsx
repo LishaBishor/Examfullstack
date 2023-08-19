@@ -11,7 +11,7 @@ const Header = () => {
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
-        <a class="nav-link active" aria-current="page" href="/">Add</a>
+        <a class="nav-link active" aria-current="page" href="/add">Add</a>
         <a class="nav-link" href="/viewall">Viewall</a>
         <a class="nav-link" href="/viewEmpAd">ViewCompleted</a>
         <a class="nav-link" href="/viewEmpAd">ViewInCompleted</a>
