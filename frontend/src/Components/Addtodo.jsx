@@ -36,7 +36,8 @@ const Addtodo = () => {
   
 }
   return (
-    <div>
+    <div style={{paddingTop:"100px"}} className='App'>
+         <Header/>
         <div className="container">
             <div className="row">
                 <div className="col col-12 col-sm-12 col-md-12 col-lg-12">
@@ -60,7 +61,7 @@ const Addtodo = () => {
                         </div>
                        
                         <div className=" col-12 col-sm-6 col-md-6 col-ig-6">
-                        <button className="btn btn-danger" onClick={addEmp} >Submit</button>
+                        <button className="btn btn-danger" onClick={addEmp} >Add</button>
                         </div>
                     </div>
                 </div>
