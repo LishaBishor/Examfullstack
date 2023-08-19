@@ -5,8 +5,8 @@ import axios from 'axios'
 import { useNavigate } from 'react-router-dom'
 
 const Addtodo = () => {
-    const navigate=useNavigate();
     
+    const navigate=useNavigate();
     const[todo,setTodo]=useState()
     const inputHandler=(e)=>{
         
@@ -17,6 +17,7 @@ const Addtodo = () => {
     }
     const addEmp=()=>{
        
+       
         console.log("add clicked")
         
         axios.post("http://localhost:7000/api/addtodo",todo)
@@ -24,7 +25,7 @@ const Addtodo = () => {
             console.log(response)
             if(response.data.message==="Added Successfully"){
                 alert(response.data.message)
-                window.location.reload(false);
+                navigate("/viewtodo")
             }
             else{
                 alert(response.data.message)
