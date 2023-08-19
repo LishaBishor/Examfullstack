@@ -20,7 +20,7 @@ const Addtodo = () => {
        
         console.log("add clicked")
         
-        axios.post("http://localhost:7000/api/addtodo",todo)
+        axios.post("/api/addtodo",todo)
         .then((response)=>{
             console.log(response)
             if(response.data.message==="Added Successfully"){
